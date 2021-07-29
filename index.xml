@@ -5,7 +5,22 @@
     <link>https://liucy0404.github.io/</link>
     <description>Recent content on Cheney的个人主页</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://liucy0404.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Thu, 29 Jul 2021 20:36:04 +0800</lastBuildDate><atom:link href="https://liucy0404.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Redis_</title>
+      <link>https://liucy0404.github.io/post/redis_/</link>
+      <pubDate>Thu, 29 Jul 2021 20:36:04 +0800</pubDate>
+      
+      <guid>https://liucy0404.github.io/post/redis_/</guid>
+      <description>redis数据类型 1 字符串类型 ​ 字符串类型是编程语言和应用程序中最常见和最有用的数据类型，也是Redis的基本数据类型之一，事实上，Redis中所有键都必须是字符串。
+2 list数据类型 ​ 列表是应用我只是应该程序开发中非常有用的数据类型之一，列表能存在一组对象，因此它也可以被用于栈或者队列，在Redis中，与键相关的联的值可以是字符串组成的列表，Redis中的列表更像是数据结构中的双向链表。
+3 hash数据类型 ​ 哈希表示字段和值之间的映射关系，与JAVA中的Map类似，Redis数据集本身就可以看做一个哈希，其中字符串类型的键关联到如字符串和列表之类的数据对象，而Reidis的数据对象也可以再次使用哈希，其字段和值必须 是字符串。
+4 set数据类型 ​ 集合类型是由唯一，无序对象组成的集合(collection).它经常用于测试某个成员是集合中，重复项删除和集合运算（求并，交，差集），Redis的值对象可以是字符串集合。
+5 zset(sortset)数据类型 ​ 有序集合是一个类似于set但是更复杂的数据类型,单词sorted意为着这种集合中的每个元素都有一个可用于排序的权重，并且我们可以按顺序从集合中得到元素在某些需要一个保持数据有序的场景中，使用这种原生的序的特性是很方便的。
+命令 1 常用命令 keys * 获取所有的key select 0 选择第一个库 move myString 1 将当前的数据库key移动到某个数据库,目标库有，则不能移动 flushdb 清除指定库 randomkey 从当前数据库中随机返回 type key 类型 del key1 删除key exists key 判断是否存在key expire key 10 10过期 pexpire key 1000 毫秒 persist key 删除过期时间 ttl key 查看还有多少秒过期，-1表示永不过期，-2表示已过期 2 string类型相关命令  set name cxx get name getrange name 0 -1 字符串分段 0 -1是全部 0 -2 ==n-1 getset name new_cxx 设置值，返回旧值 mset key1 key2 批量设置 mget key1 key2 批量获取 setnx key value 不存在就插入（not exists） setrange key index value 从index开始替换value incr age 递增 incrby age 10 递增 decr age 递减 decrby age 10 递减 incrbyfloat 增减浮点数 append 追加 strlen 长度 object encoding key 得到key 的类型 string里面有三种编码 ​ int 用于能够副作用64位有符号整数表示的字符串 ​ embstr 用于长度小于或等于44字节 Redis3.</description>
+    </item>
+    
     <item>
       <title></title>
       <link>https://liucy0404.github.io/post/redis%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E5%8F%8A%E5%91%BD%E4%BB%A4/</link>
